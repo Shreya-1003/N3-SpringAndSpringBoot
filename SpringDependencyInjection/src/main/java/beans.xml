@@ -7,7 +7,22 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
 <!--bean id="airtel" class="org.tnsif.springioc.Airtel"></bean -->
-<bean id="sim" class="org.tnsif.springioc.Airtel"></bean>
+<bean id="swift" class="org.tnsif.objectsInjection.SwiftEngine">
+	
+<!--property name="company" value="Tata"/>
+<property name="cost" value="450000" /-->
+<constructor-arg name="company" value="Tata" />
+<constructor-arg name = "cost" value="478000"/>
+	
+</bean>
 
+<bean id="sim" class="org.tnsif.springioc.Airtel">
+
+<!--property name="company" value="Renault"/>
+<property name="cost" value="450000" /-->
+<constructor-arg name="company" value="TRenault" />
+<constructor-arg name = "cost" value="878000"/>
+	
+</bean>
 
 </beans>  

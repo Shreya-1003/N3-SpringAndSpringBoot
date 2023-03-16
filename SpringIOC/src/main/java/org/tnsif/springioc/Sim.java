@@ -1,4 +1,4 @@
-package org.tnsif.springioc;
+   package org.tnsif.springioc;
 
 //program to demonstrate on spring ioc
 public interface Sim {
